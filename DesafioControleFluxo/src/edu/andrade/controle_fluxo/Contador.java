@@ -20,6 +20,7 @@ public class Contador {
         } catch (ParametrosInvalidosException exception) {
             System.err.println("Error: O segundo parâmetro deve ser maior que o primeiro.");
         }
+        terminal.close();
 
     }
 
@@ -29,7 +30,7 @@ public class Contador {
         }
 
         int contagem = parametroDois - parametroUm;
-        for (int i = 0; i < contagem; i++) {
+        for (int i = 1; i <= contagem; i++) {
             System.out.println("Imprimindo o número " + i);
         }
     }
